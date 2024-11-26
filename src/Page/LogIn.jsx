@@ -16,7 +16,7 @@ function LogIn() {
     try {
       const data = { email: userEmail, password: password };
       const res = await fetch(
-        "https://instagram-backend-z02u.onrender.com//user",
+        "https://instagram-backend-z02u.onrender.com/user",
         {
           method: "POST",
           headers: {

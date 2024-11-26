@@ -90,7 +90,7 @@ function LogIn() {
           </div>
 
           {/* for mobile */}
-          <div className=" text-[14px] text-end mb-1.5 mt-1 text-[#258ED2]">
+          <div className=" text-[14px] text-end mb-1.5 mt-1 text-[#258ED2] max-[650px]:block hidden">
             Forgotten your password?
           </div>
           <button

@@ -15,13 +15,16 @@ function LogIn() {
   const postUser = async () => {
     try {
       const data = { email: userEmail, password: password };
-      const res = await fetch("http://localhost:8000/user", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const res = await fetch(
+        "https://instagram-backend-z02u.onrender.com//user",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
       const resut = await res.json();
       if (resut.success) {
         setShowError(true);
